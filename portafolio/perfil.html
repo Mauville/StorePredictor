@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H.A.T.</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+</head>
+<body>
+    <header>
+        <h4 class="tp">T.A.D.</h4>
+        <div class="pb2">
+            <p>powered by:</p>
+        </div>
+        <img src="img/jda.png" alt="Logo jda" class="jda2">
+        <div class="barra2">
+            <nav class="navegacion">
+                    <a href="index.html">Return to T.A.D.</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <form action="">
+            <fieldset>
+                <legend>User Profile:</legend>
+                <img src="img/perfil.jpg" alt="ImagenPerfil" class="perili">
+                <p class="np">John Smith</p>
+                <h1>Risk</h1>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <p>Value: <span id="demo"></span></p>
+                </div>
+                <h1>Income</h1>
+                <p>$</p><input type="number" name="money" step="100" class="dinero">
+                <input type="submit" value="Submit" class="boton2 boton-azul2">
+                <h1>Age</h1>
+                <input type="number" name="age" step="1" class="edad">
+                <input type="submit" value="Submit" class="boton3 boton-azul3">
+            </fieldset>
+        </form>
+    </main>
+
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        </script>
+</body>
+</html>

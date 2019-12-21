@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>T.D.A.</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap:300,400,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilosM.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <header>
+    <div class="contenedor">
+      <nav class="menu">
+        <a href="index.html">New Attempt</a>
+        <a href="informacion.html">What is T.A.D.?</a>
+        <a href="perfil.html">Profile</a>
+        <a href="csv.html">Table</a>
+      </nav>
+
+      <div class="contenedor-texto">
+        <div class="texto">
+          <h1 class="nombre">T.A.D.</h1>
+          <h2 class="profesion">Powered by JDA</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main">
+    <section class="contenedor">
+            <img class="graph" src="img/graph.jpg">
+            <div class="sb">
+                    <p>Should I buy:</p>
+                    <img src="img/boton.png" alt="imagen boton" height="90px" width="90px">
+                    <article class="dec">YES</article>
+                    <div class="m">
+                        <p class="mse">MSE:</p>
+                        <p class="nmse">0.01</p>
+                    </div>
+                </div>
+    </section>
+    
+  </section>
+
+<!-- 
+    <script type="text/javascript">
+        // Load the Visualization API and the controls package.
+        google.charts.load('current', {'packages':['corechart', 'controls']});
+  
+        // Set a callback to run when the Google Visualization API is loaded.
+        google.charts.setOnLoadCallback(drawDashboard);
+  
+        // Callback that creates and populates a data table,
+        // instantiates a dashboard, a range slider and a pie chart,
+        // passes in the data and draws it.
+        function drawDashboard() {
+  
+          // Create our data table.
+          var data = google.visualization.arrayToDataTable([
+            ['Name', 'Hyperparameters'],
+            ['Location' , 100],
+            ['Product', 80],
+            ['Date', 0],
+            ['Tmp Max', 92],
+            ['Tmp Prom', 8],
+            ['Tmp Min', 64],
+            ['Sunshine Q', 52],
+            ['Event', 93],
+            ['Price', 100]
+          ]);
+  
+          // Create a dashboard.
+          var dashboard = new google.visualization.Dashboard(
+              document.getElementById('dashboard_div'));
+  
+          // Create a range slider, passing some options
+          var donutRangeSlider = new google.visualization.ControlWrapper({
+            'controlType': 'NumberRangeFilter',
+            'containerId': 'filter_div',
+            'options': {
+              'filterColumnLabel': 'Hyperparameters'
+            }
+          });
+  
+          // Create a pie chart, passing some options
+          var pieChart = new google.visualization.ChartWrapper({
+            'chartType': 'PieChart',
+            'containerId': 'chart_div',
+            'options': {
+              'width': 500,
+              'height': 600,
+              'pieSliceText': 'value',
+              'legend': 'right'
+            }
+          });
+  
+          // Establish dependencies, declaring that 'filter' drives 'pieChart',
+          // so that the pie chart will only display entries that are let through
+          // given the chosen slider range.
+          dashboard.bind(donutRangeSlider, pieChart);
+  
+          // Draw the dashboard.
+          dashboard.draw(data);
+        }
+      </script>
+
+
+      -->
+
+    
+</body>
+</html>
